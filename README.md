@@ -6,13 +6,23 @@ Approach: This project demonstrates the use of a Quad Tree to simplify the detec
 
 <video src="20231120-0040-53.2402874.mp4" controls title="Title"></video>
 
+## Image Example
+
 ![Quad Tree](image-1.png)
 
-- The grey squares will pathfind to random positions around the map
-- As they move around, the white grid will update, displaying the state of the quad tree
-- Red numbers represent how many objects are in a given quad
-- The teal towers are looking for enemies, and have a red border for the area they consider
+- After you hit 'play' the grey squares will pathfind to random positions
+- As they move around, the white grid will update, displaying the state of the quad tree data structure
+- Red numbers show how many objects are in a given quad
 - Green numbers represent the number of objects "in range" of a tower
-- Red squares represent the range a tower considers
 - Within each red boundary, we can know in constant time how many enemies are present. 
-- Within that set of enemies, we can do exact distance calculations to know which enemy is closest to a tower
+
+## In Practice
+
+Looking at the image, you can see the two towers on the right each see 3 enemies. If each tower needs to pick a single target, we only need to perform calculations between the 2 towers and the 3 targets (2x3 instead of m*n). We could apply decision logic, such as targeting the strongest enemy, closest enemy, or furthest enemy, and it would still be super fast because its only considering the things that are already known to be in the same quad boundaries. 
+
+## Rough benchmarking
+
+I tested it with a mid-range PC and got the following results, running in the editor
+- 200 pathfinding game objects: ~100 fps
+- 3000 pathfinding game objects: ~45 fps
+- 8000 pathfinding game objects: ~15 fps
