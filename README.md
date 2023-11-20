@@ -2,7 +2,7 @@
 
 Problem: Calculating distances between things is expensive. Lets say we have 10 towers (n) and 1000 zombies (m) charging toward them. For turrets to know which zombies are closest, we might calculate the distances between all turrets and all zombies, but thats exremely expensive (m*n distance calculations).
 
-Approach: This project demonstrates the use of a Quad Tree to simplify the detection. The Quad Tree figures out which targets are "roughly in range" of a tower, and once we have that list, we can do the more expensive vector distance calculations to determine which target is closest to the tower.
+Approach: This project demonstrates the use of a Quad Tree to simplify the detection. The Quad Tree figures out which targets are "roughly in range" of a tower, and once we have that list, we can do the more expensive vector distance calculations to determine which target is closest to the tower. It can comfortably perform calculations on 2000 objects, but slows down a fair bit around 5000 on a low/mid-range PC.
 
 <video src="20231120-0040-53.2402874.mp4" controls title="Title"></video>
 <video src="demo.mp4" controls title="Title"></video>
