@@ -5,6 +5,7 @@ Problem: Calculating distances between things is expensive. Lets say we have 10 
 Approach: This project demonstrates the use of a Quad Tree to simplify the detection. The Quad Tree figures out which targets are "roughly in range" of a tower, and once we have that list, we can do the more expensive vector distance calculations to determine which target is closest to the tower.
 
 <video src="20231120-0040-53.2402874.mp4" controls title="Title"></video>
+<video src="demo.mp4" controls title="Title"></video>
 
 ## Image Example
 
