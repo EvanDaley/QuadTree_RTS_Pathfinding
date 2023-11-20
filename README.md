@@ -21,6 +21,10 @@ Approach: This project demonstrates the use of a Quad Tree to simplify the detec
 
 Looking at the image, you can see the two towers on the right each see 3 enemies. If each tower needs to pick a single target, we only need to perform calculations between the 2 towers and the 3 targets (2x3 instead of m*n). We could apply decision logic, such as targeting the strongest enemy, closest enemy, or furthest enemy, and it would still be super fast because its only considering the things that are already known to be in the same quad boundaries. 
 
+## Video Demo
+I haven't found an easy way to add a video in a readme, but if you want to see it in action, you can download this 15 second mp4.
+https://github.com/EvanDaley/QuadTree_RTS_Pathfinding/blob/main/demo.mp4
+
 ## Rough benchmarking
 
 I tested it with a mid-range PC and got the following results, running in the editor
