@@ -32,6 +32,6 @@ I tested it with a mid-range PC and got the following results, running in the ed
 - 3000 pathfinding game objects: ~45 fps
 - 8000 pathfinding game objects: ~15 fps
 
-On a higher end PC I was able to have 8000 actors at around 30 fps:
+On a higher end PC I was able to have 8000 actors at around 30 fps (or 20 FPS with both editor and game windows rendering):
 
 ![Alt text](image-2.png)
