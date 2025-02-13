@@ -9,7 +9,7 @@ Approach: This project demonstrates the use of a Quad Tree to simplify the detec
 
 ## Image Example
 
-This Unity simulation shows 4 towers, with a visible count of the "enemies" in each of their ranges, based on the quadtree calculation.
+This Unity simulation shows 4 towers (teal), with a visible count (green) of the enemies (gray) in each of their ranges, based on the quadtree calculation.
 
 ![Quad Tree](image-1.png)
 
