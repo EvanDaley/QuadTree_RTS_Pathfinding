@@ -9,6 +9,8 @@ Approach: This project demonstrates the use of a Quad Tree to simplify the detec
 
 ## Image Example
 
+This Unity simulation shows 4 towers, with a visible count of the "enemies" in each of their ranges, based on the quadtree calculation.
+
 ![Quad Tree](image-1.png)
 
 - After you hit 'play' the grey squares will pathfind to random positions
